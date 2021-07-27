@@ -1,0 +1,120 @@
+@media screen and(min-width:480px) {
+  .footer {
+    background-color: rgba(47, 48, 58, 1);
+    color: var(--main-background-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    &__box {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    &__data {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      // margin-right: 70px;
+    }
+  }
+  .footer-social-links {
+    // margin-left: 0;
+    // margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    &__icon {
+      fill: #ffffff;
+    }
+    &__item {
+      margin-right: 10px;
+    }
+    &__link {
+      background-color: rgba(255, 255, 255, 0.1);
+      margin-top: 20px;
+    }
+  }
+  .footer-contacts {
+    font-style: normal;
+    text-align: center;
+  }
+  .footer-contacts__link {
+    color: rgba(255, 255, 255, 0.6);
+    margin-top: 9px;
+
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+      transition-property: background-color;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  }
+}
+@media screen and(min-width: 768px) {
+  .footer{
+    padding-top: 0;
+  }
+  .footer__box{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: baseline;
+  }
+  .footer__data{
+    margin-left: 76px;
+    margin-right: auto;
+    padding-bottom: 60px;
+  }
+  .footer-social-links{
+    margin-right: 76px;
+    margin-left: auto;
+  }
+
+
+}
+@media screen and (min-width: 1200px) {
+  .footer__box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  .footer__data {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-right: 70px;
+    margin-left: 0;
+  }
+  
+  .footer-social-links {
+    margin-left: 0;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    justify-content: flex-start;
+    text-align: left;
+  }
+  .footer-contacts {
+    font-style: normal;
+    text-align: left;
+    
+  }
+}
+
+.footer-social-links__link:hover,
+.footer-social-links__link:focus {
+  background-color: var(--accent-color);
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}

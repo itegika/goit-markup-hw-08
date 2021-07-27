@@ -1,0 +1,44 @@
+.logo {
+  color: var(--accent-color);
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+}
+
+
+@media screen and (min-width: 1200px) {
+  .logo {
+  font-size: 26px;
+  line-height: 1.19;
+}
+}
+
+.logo--dark-font {
+  color: var(--headers-text-color);
+}
+.logo--white-font {
+  color: var(--main-background-color);
+}
+// @media screen and (max-width:767px){
+//   .header-logo{
+//     // margin-right: auto;
+//     padding-top: 16px;
+//     padding-bottom: 16px;
+//   }
+// }
+@media screen and (min-width: 768px){
+  .header-logo {
+    margin-right: 88px;
+  }
+}
+@media screen and (min-width: 1200px){
+  .header-logo {
+    margin-right: 93px;
+  }
+}
+
+.footer-logo {
+  margin-bottom: 20px;
+}
