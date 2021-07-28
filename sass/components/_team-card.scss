@@ -1,4 +1,4 @@
-@media screen and (min-width: 480px) {
+
   .team-section__item {
     // width: 100%;
     background-color: #ffffff;
@@ -11,12 +11,18 @@
     margin-bottom: 30px;
   }
   .team-section__image {
-    width: 450px;
+    // width: 450px;
     height: auto;
   }
   .team-section__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    padding: 30px 122px 25px;
+    padding-top: 30px;
+    padding-bottom: 25px;
+  
   }
   .team-section__worker {
     color: var(--headers-text-color);
@@ -29,7 +35,11 @@
     font-size: 16px;
     line-height: 1.18;
   }
+@media screen and(min-width: 480px) {
+  .team-section__image {
+      width: 450px;}
 }
+
 @media screen and (min-width: 768px) {
   .team-section__item {
     width: 354px;

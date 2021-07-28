@@ -1,4 +1,3 @@
-```js
 (() => {
   const refs = {
     openMenuBtn: document.querySelector("[data-menu-open]"),
@@ -11,4 +10,3 @@
     refs.menu.classList.toggle("is-open");
   }
 })();
-```

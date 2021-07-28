@@ -1,4 +1,4 @@
-@media screen and(min-width: 480px) {
+ 
   .signup-form__box{
     // margin-right: 0;
     // margin-left: 0;
@@ -7,10 +7,20 @@
     justify-content: center;
     align-items: center;
   }
+  .signup-form{
+    margin-left: 0;
+    margin-right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
   .signup-form__mail-field {
     outline: none;
-    width: 450px;
+    margin-left: 0;
+    margin-right: 0;
+    // max-width: 450px;
     height: 50px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     box-sizing: border-box;
@@ -47,6 +57,10 @@
     background-size: contain;
     background-repeat: no-repeat;}
   }
+@media screen and(min-width: 480px) {
+  .signup-form__mail-field {
+   width: 450px;
+  }
 }
 
 @media screen and(min-width: 768px) {
@@ -60,15 +74,20 @@
 @media screen and(min-width: 1200px) {
   .signup-form {
   display: flex;
+  flex-direction: row;
   align-items: flex-end;
   justify-content: flex-start;
 
    &__box {
+     display: flex;
+     flex-direction: column;
+     justify-content: flex-start;
+     align-items: flex-start;
     margin-right: 0; }
 
     &__slogan {
     display: block;
-    margin-bottom: 20px;
+    // margin-bottom: 20px;
     color: rgba(255, 255, 255, 1); }
   }
  .signup-form__mail-field{
