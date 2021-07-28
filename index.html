@@ -39,7 +39,50 @@
                             </use>
                         </svg><span>+38 096 111 11 11</span></a></li>
             </ul>
+            <button class="burger-btn" data-menu-open>
+                <svg class="burger-btn__icon" >
+                    <use href="./images/symbol-defs.svg#icon-burger"></use>
+                </svg>
+            </button>
+
+            <div class="mob-menu is-open" data-menu>
+                <div class="mob-menu__container container">
+                    <button class="mob-menu__close-btn" data-menu-close>
+                        <svg class="mob-menu__close-btn-icon" width="19" height="19">
+                            <use href="./images/symbol-defs.svg#icon-menu_closebtn"></use>
+                        </svg>
+                    </button>
+                    <div class="mob-menu__list-container">
+                        <div class="mob-menu__nav-container">
+                            <ul class="mob-menu__nav list">
+                                <li class="mob-menu__item"><a href="./index.html" class="mob-menu__link link current">Студия</a></li>
+                                <li class="mob-menu__item"><a href="./portfolio.html" class="mob-menu__link link">Портфолио</a></li>
+                                <li class="mob-menu__item"><a href="" class="mob-menu__link link">Контакты</a></li>
+                            </ul>
+                        </div>
+                        <div class="mob-menu__contact-container">
+                            <ul class="mob-menu__contact list">
+                                <li class="mob-menu__contact-item"><a href="tel:+380961111111" class="mob-menu__contact-link tel-link link">
+                                        +38 096 111 11 11</a></li>
+                                <li class="mob-menu__contact-item"><a href="mailto:info@devstudio.com"
+                                        class="mob-menu__contact-link mail-link link">
+                                        info@devstudio.com</a></li>
+                            </ul>
+                            <ul class="mob-menu__social list">
+                                <li class="mob-menu__social-item"><a href="" class="mob-menu__social-link link">Instagram</a></li>
+                                <li class="mob-menu__social-item"><a href="" class="mob-menu__social-link link">Twitter</a></li>
+                                <li class="mob-menu__social-item"><a href="" class="mob-menu__social-link link">Facebook</a></li>
+                                <li class="mob-menu__social-item"><a href="" class="mob-menu__social-link link">LinkedIn</a></li>
+                            </ul>
+                        </div>
+                    </div>
+        
+                </div>
+            </div>
+
         </div>
+
+        
     </header>
 
     <main>
@@ -104,24 +147,39 @@
                 <ul class="work-section__list list">
                     <li class="work-section__item">
                         <div class="work-section__box">
-                            <img class="work-section__image" src="./images/photo1.jpg" alt="Десктопные приложения"
-                                width="370" />
+                            <picture class="picture">
+                                <source srcset='./images/work/work1.webp 1x, ./images/work/work1@2x.webp 2x' media="(min-width: 1200px)" type="image/webp">
+                                <source srcset='./images/work/work1.jpg 1x, ./images/work/work1@2x.jpg 2x' media="(min-width: 1200px)">
+                                <img class="work-section__image" src="./images/work/work1.jpg" alt="Десктопные приложения"
+                                width="370" />                               
+                            </picture>
+
                             <p class="work-section__features box-title">Десктопные приложения</p>
                         </div>
 
                     </li>
                     <li class="work-section__item">
                         <div class="work-section__box">
-                            <img class="work-section__image" src="./images/photo2.jpg" alt="Мобильные приложения"
-                                width="370" />
+                            <picture class="picture">
+                                <source srcset='./images/work/work2.webp 1x, ./images/work/work2@2x.webp 2x' media="(min-width: 1200px)" type="image/webp">
+                                <source srcset='./images/work/work2.jpg 1x, ./images/work/work2@2x.jpg 2x' media="(min-width: 1200px)">
+                                <img class="work-section__image" src="./images/work/work2.jpg" alt="Мобильные приложения"
+                                width="370" />                               
+                            </picture>
+    
                             <p class="work-section__features box-title">Мобильные приложения</p>
                         </div>
 
                     </li>
                     <li class="work-section__item">
                         <div class="work-section__box">
-                            <img class="work-section__image" src="./images/photo3.jpg" alt="Дизайнерские решения"
-                                width="370" />
+                            <picture class="picture">
+                                <source srcset='./images/work/work3.webp 1x, ./images/work/work3@2x.webp 2x' media="(min-width: 1200px)" type="image/webp">
+                                <source srcset='./images/work/work3.jpg 1x, ./images/work/work3@2x.jpg 2x' media="(min-width: 1200px)">
+                                <img class="work-section__image" src="./images/work/work3.jpg" alt="Дизайнерские решения"
+                                width="370" />                               
+                            </picture>
+                
                             <p class="work-section__features box-title">Дизайнерские решения</p>
                         </div>
                     </li>
@@ -134,9 +192,15 @@
                 <h2 class="team-section__title section-title">Наша команда</h2>
                 <ul class="team-section__list list">
                     <li class="team-section__item">
-
-                        <img class="team-section__image" src="./images/image1.jpg"
-                            alt="фото Игоря с ссылкой на его страницу" width="270" />
+                        <picture class="picture">
+                            <source srcset='./images/team/desk/demyanenko.webp 1x, ./images/team/desk/demyanenko@2x.webp 2x' media="(min-width: 1200px)" type="image/webp">
+                            <source srcset='./images/team/desk/demyanenko.jpg 1x, ./images/team/desk/demyanenko@2x.jpg 2x' media="(min-width: 1200px)">
+                            <source srcset='./images/team/tabl/demyanenko.webp 1x, ./images/team/tabl/demyanenko@2x.webp 2x' media="(min-width: 768px)" type="image/webp">
+                            <source srcset='./images/team/tabl/demyanenko.jpg 1x, ./imagesteam/tabl/demyanenko@2x.jpg 2x' media="(min-width: 768px)">
+                            <source srcset='./images/team/mob/demyanenko.webp 1x, ./images/team/mob/demyanenko@2x.webp 2x' media="(max-width: 767px)" type="image/webp">
+                            <source srcset='./images/team/mob/demyanenko.jpg 1x, ./images/team/mob/demyanenko@2x.jpg 2x' media="(max-width: 767px)">
+                            <img class="team-section__image" src="./images/team/mob/demyanenko.jpg" alt="фото Игоря с ссылкой на его страницу" width="270">
+                           </picture>
 
                         <div class="team-section__text ">
                             <h3 class="team-section__worker ">Игорь Демьяненко</h3>
@@ -178,9 +242,16 @@
                         </div>
                     </li>
                     <li class="team-section__item">
+                        <picture class="picture">
+                            <source srcset='./images/team/desk/repina.webp 1x, ./images/team/desk/repina@2x.webp 2x' media="(min-width: 1200px)" type="image/webp">
+                            <source srcset='./images/team/desk/repina.jpg 1x, ./images/team/desk/repina@2x.jpg 2x' media="(min-width: 1200px)">
+                            <source srcset='./images/team/tabl/repina.webp 1x, ./images/team/tabl/repina@2x.webp 2x' media="(min-width: 768px)" type="image/webp">
+                            <source srcset='./images/team/tabl/repina.jpg 1x, ./imagesteam/tabl/repina@2x.jpg 2x' media="(min-width: 768px)">
+                            <source srcset='./images/team/mob/repina.webp 1x, ./images/team/mob/repina@2x.webp 2x' media="(max-width: 767px)" type="image/webp">
+                            <source srcset='./images/team/mob/repina.jpg 1x, ./images/team/mob/drepina@2x.jpg 2x' media="(max-width: 767px)">
+                            <img class="team-section__image" src="./images/team/mob/repina.jpg" alt="фото Ольги с ссылкой на ее страницу" width="270">
+                           </picture>
 
-                        <img class="team-section__image" src="./images/image2.jpg"
-                            alt="фото Ольги с ссылкой на ее страницу" width="" />
 
                         <div class="team-section__text">
                             <h3 class="team-section__worker ">Ольга Репина</h3>
@@ -222,10 +293,17 @@
                         </div>
                     </li>
                     <li class="team-section__item">
+                        <picture class="picture">
+                            <source srcset='./images/team/desk/tarasov.webp 1x, ./images/team/desk/tarasov@2x.webp 2x' media="(min-width: 1200px)" type="image/webp">
+                            <source srcset='./images/team/desk/tarasov.jpg 1x, ./images/team/desk/tarasov@2x.jpg 2x' media="(min-width: 1200px)">
+                            <source srcset='./images/team/tabl/tarasov.webp 1x, ./images/team/tabl/tarasov@2x.webp 2x' media="(min-width: 768px)" type="image/webp">
+                            <source srcset='./images/team/tabl/tarasov.jpg 1x, ./imagesteam/tabl/tarasov@2x.jpg 2x' media="(min-width: 768px)">
+                            <source srcset='./images/team/mob/tarasov.webp 1x, ./images/team/mob/tarasov@2x.webp 2x' media="(max-width: 767px)" type="image/webp">
+                            <source srcset='./images/team/mob/tarasov.jpg 1x, ./images/team/mob/tarasov@2x.jpg 2x' media="(max-width: 767px)">
+                            <img class="team-section__image" src="./images/team/mob/tarasov.jpg" alt="фото Николая с ссылкой на его страницу" width="270">
+                           </picture>
 
-                        <img class="team-section__image" src="./images/image3.jpg"
-                            alt="фото Николая с ссылкой на его страницу" width="" />
-
+                
                         <div class="team-section__text">
                             <h3 class="team-section__worker ">Николай Тарасов</h3>
                             <p class="team-section__position">Marketing</p>
@@ -266,9 +344,15 @@
                         </div>
                     </li>
                     <li class="team-section__item">
-
-                        <img class="team-section__image" src="./images/image4.jpg"
-                            alt="фото Михаила с ссылкой на его страницу" width="270" />
+                        <picture class="picture">
+                            <source srcset='./images/team/desk/ermakov.webp 1x, ./images/team/desk/ermakov@2x.webp 2x' media="(min-width: 1200px)" type="image/webp">
+                            <source srcset='./images/team/desk/ermakov.jpg 1x, ./images/team/desk/ermakov@2x.jpg 2x' media="(min-width: 1200px)">
+                            <source srcset='./images/team/tabl/ermakov.webp 1x, ./images/team/tabl/ermakov@2x.webp 2x' media="(min-width: 768px)" type="image/webp">
+                            <source srcset='./images/team/tabl/ermakov.jpg 1x, ./imagesteam/tabl/ermakov@2x.jpg 2x' media="(min-width: 768px)">
+                            <source srcset='./images/team/mob/ermakov.webp 1x, ./images/team/mob/ermakov@2x.webp 2x' media="(max-width: 767px)" type="image/webp">
+                            <source srcset='./images/team/mob/ermakov.jpg 1x, ./images/team/mob/ermakov@2x.jpg 2x' media="(max-width: 767px)">
+                            <img class="team-section__image" src="./images/team/mob/ermakov.jpg" alt="фото Михаила с ссылкой на его страницу" width="270">
+                           </picture>
 
                         <div class="team-section__text">
                             <h3 class="team-section__worker ">Михаил Ермаков</h3>
@@ -487,6 +571,7 @@
 
 
         <script src="./js/modal.js"></script>
+        <script src="./js/menu.js"></script>
 </body>
 
 </html>
