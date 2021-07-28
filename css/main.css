@@ -611,6 +611,7 @@ ol {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 50%;
 }
 
 .signup-form {
@@ -666,13 +667,17 @@ ol {
   background-repeat: no-repeat;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 1199px) {
   .signup-form__mail-field {
     width: 450px;
   }
 }
 
 @media screen and (min-width: 768px) {
+  .signup-form__box {
+    width: 100%;
+    margin-top: 60px;
+  }
   .signup-form {
     display: flex;
     flex-direction: column;
@@ -689,11 +694,13 @@ ol {
     justify-content: flex-start;
   }
   .signup-form__box {
+    margin-top: 0;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
     margin-right: 0;
+    width: 50%;
   }
   .signup-form__slogan {
     display: block;
@@ -701,6 +708,7 @@ ol {
   }
   .signup-form__mail-field {
     padding: 15px 16px;
+    width: 358px;
   }
   .signup-form__submitbtn {
     position: relative;
@@ -861,6 +869,14 @@ ol {
   margin-bottom: 10px;
 }
 
+@media screen and (max-width: 767px) {
+  .adv__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .adv__list {
     display: flex;
@@ -1006,8 +1022,6 @@ ol {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 60px;
-  padding-bottom: 60px;
 }
 
 .footer-social-links__icon {
@@ -1040,10 +1054,16 @@ ol {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media screen and (min-width: 768px) {
-  .footer {
-    padding-top: 0;
+@media screen and (max-width: 767px) {
+  .footer__data {
+    margin-bottom: 60px;
   }
+  .footer-social-links {
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 768px) {
   .footer__box {
     display: flex;
     flex-direction: row;
@@ -1051,13 +1071,10 @@ ol {
     align-items: baseline;
   }
   .footer__data {
-    margin-left: 76px;
-    margin-right: auto;
-    padding-bottom: 60px;
+    width: 50%;
   }
   .footer-social-links {
-    margin-right: 76px;
-    margin-left: auto;
+    width: 50%;
   }
 }
 
@@ -1066,16 +1083,15 @@ ol {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: space-between;
+    justify-content: center;
     align-items: baseline;
   }
   .footer__data {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
     align-items: flex-start;
-    margin-right: 70px;
-    margin-left: 0;
+    width: 25%;
   }
   .footer-social-links {
     margin-left: 0;
@@ -1086,6 +1102,7 @@ ol {
     align-items: flex-start;
     justify-content: flex-start;
     text-align: left;
+    width: 25%;
   }
   .footer-contacts {
     font-style: normal;
@@ -1298,6 +1315,14 @@ ol {
   margin-right: 8px;
 }
 
+@media screen and (max-width: 767px) {
+  .projects-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .projects-categories {
     display: flex;
@@ -1347,6 +1372,14 @@ ol {
 .social-links__icon:hover,
 .social-links__icon:focus {
   fill: #ffffff;
+}
+
+@media screen and (max-width: 767px) {
+  .team-section__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 
 @media screen and (min-width: 768px) {
