@@ -869,14 +869,6 @@ ol {
   margin-bottom: 10px;
 }
 
-@media screen and (max-width: 767px) {
-  .adv__list {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-}
-
 @media screen and (min-width: 768px) {
   .adv__list {
     display: flex;
@@ -1315,14 +1307,6 @@ ol {
   margin-right: 8px;
 }
 
-@media screen and (max-width: 767px) {
-  .projects-list {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-}
-
 @media screen and (min-width: 768px) {
   .projects-categories {
     display: flex;
@@ -1372,14 +1356,6 @@ ol {
 .social-links__icon:hover,
 .social-links__icon:focus {
   fill: #ffffff;
-}
-
-@media screen and (max-width: 767px) {
-  .team-section__list {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
 }
 
 @media screen and (min-width: 768px) {

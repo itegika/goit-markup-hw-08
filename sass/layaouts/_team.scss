@@ -15,13 +15,14 @@
 .social-links__icon:focus {
   fill: #ffffff;
 }
-@media screen and(max-width: 767px){
-  .team-section__list{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-}
+// @media screen and(max-width: 767px){
+//   .team-section__list{
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+    
+//   }
+// }
 @media screen and (min-width: 768px) {
   .team-section {
     background-color: #f5f4fa;
